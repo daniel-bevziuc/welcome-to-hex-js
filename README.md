@@ -20,7 +20,7 @@ No profile page is complete without the following:
 - What makes you stand out for this role and what do you hope to achieve
 
 ## What we'd like to see being used 🕵️‍♂️
-- The API
+- The API   
 - Jest
 - React Hooks
 - CSS

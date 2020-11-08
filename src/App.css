@@ -1,38 +1,100 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* Global setings */
+body {
+  margin: 30px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
+  position: relative;
+  padding: 3.5rem 0;
+  background-color: rgba(236, 243, 244, 0.6);
+}
+
+.white-triangle {
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  width: 13%;
+  height: 0px;
+  border-top: 100vh solid white;
+  border-right: 30vw solid transparent;
+}
+
+.main-content {
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 75%;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  box-shadow: 2px 3px 15px -6px #000000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.container a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container a:hover {
+  border-bottom: 1px solid #000000;
+}
+
+h5 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: 1.1rem 0;
+}
+
+.light {
+  font-weight: normal;
+  color: rgb(105, 105, 105);
+  line-height: 145.69%;
+  letter-spacing: 0.02em;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Hero card */
+.user-hero__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  box-shadow: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-hero__section:hover {
+  transform: scale(1);
+  cursor: default;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-descr {
+  margin-left: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero-descr h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-img {
+  box-shadow: 3px 3px 3px #000;
+  border-radius: 50%;
 }
